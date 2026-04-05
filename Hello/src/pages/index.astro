@@ -12,6 +12,13 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Hello :3</h1>
+		<h1>Hello:3</h1>
+		<div id="message"></div>
+		<button onclick="updatePage()">Atualizar Página</button>
+		<script client:load>
+			function updatePage() {
+				document.getElementById('message').innerHTML = 'A página foi atualizada!';
+			}
+		</script>
 	</body>
 </html>
